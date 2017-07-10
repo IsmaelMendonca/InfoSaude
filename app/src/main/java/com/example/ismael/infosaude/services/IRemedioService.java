@@ -14,6 +14,6 @@ import retrofit2.http.QueryMap;
  */
 
 public interface IRemedioService {
-    @GET("mapa-da-saude/rest/remedios")
+    @GET("remedios")
     Call<List<RemedioDomain>> getRemedio(@QueryMap Map<String, String> options);
 }

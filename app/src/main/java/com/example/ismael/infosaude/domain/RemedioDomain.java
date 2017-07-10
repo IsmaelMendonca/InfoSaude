@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.io.Serializable;
 
 /**
- * Created by allanalves on 28/06/17.
+ * Created by Ismael Mendonça on 28/06/17.
  */
 
 public class RemedioDomain implements Serializable {

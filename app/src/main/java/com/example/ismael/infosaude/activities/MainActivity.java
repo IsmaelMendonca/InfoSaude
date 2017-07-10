@@ -6,6 +6,7 @@ import android.os.Bundle;
 
 import com.example.ismael.infosaude.R;
 import com.example.ismael.infosaude.R2;
+import com.example.ismael.infosaude.singletons.ConfigurationsProperties;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -18,11 +19,13 @@ public class MainActivity extends BaseActivity {
         setContentView(R.layout.activity_main);
 
         ButterKnife.bind(this);
+
+        ConfigurationsProperties.init(getApplicationContext());
     }
 
     @OnClick(R2.id.btn_buscar_remedio)
     public void irBuscarRemedio() {
-        Intent brIntent = new Intent(this, BuscaRemedioActivity.class);
+        Intent brIntent = new Intent("android.intent.action.CALL");
         startActivity(brIntent);
     }
 

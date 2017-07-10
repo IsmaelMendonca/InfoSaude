@@ -10,7 +10,6 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.text.Editable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,11 +18,13 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.example.ismael.infosaude.utils.AppUtils;
 import com.example.ismael.infosaude.R;
 import com.example.ismael.infosaude.R2;
 import com.example.ismael.infosaude.domain.RemedioDomain;
 import com.example.ismael.infosaude.interfaces.IRemedioCallback;
 import com.example.ismael.infosaude.services.IRemedioService;
+import com.example.ismael.infosaude.singletons.ConfigurationsProperties;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.util.HashMap;
@@ -90,7 +91,7 @@ public class BuscaRemedioActivity extends BaseActivity implements IRemedioCallba
         createProgressDialog(getString(R.string.alert_doing_request), getString(R.string.alert_loading), this);
 
         Retrofit retrofit = new Retrofit.Builder().
-                baseUrl(getString(R.string.url_base)).
+                baseUrl(ConfigurationsProperties.getInstance().getmBaseUrl()).
                 addConverterFactory(JacksonConverterFactory.create(new ObjectMapper())).
                 build();
 
@@ -98,10 +99,10 @@ public class BuscaRemedioActivity extends BaseActivity implements IRemedioCallba
 
         Map<String, String> urlParameters = new HashMap<>();
 
-        if(!isEmpty(mNomeRemedio.getText()))
+        if(!AppUtils.isEmpty(mNomeRemedio.getText()))
             urlParameters.put("produto", mNomeRemedio.getText().toString());
 
-        if(!isEmpty(mQuantidadeItens.getText()))
+        if(!AppUtils.isEmpty(mQuantidadeItens.getText()))
             urlParameters.put("quantidade", mQuantidadeItens.getText().toString());
 
         Call<List<RemedioDomain>> call = remedioService.getRemedio(urlParameters);
@@ -188,16 +189,5 @@ public class BuscaRemedioActivity extends BaseActivity implements IRemedioCallba
                 mRootContainer = (LinearLayout) view.findViewById(R.id.ll_root_container);
             }
         }
-    }
-
-    public boolean isEmpty(Editable text) {
-        if(text == null)
-            return true;
-
-        if(text.toString().isEmpty())
-            return true;
-
-        return false;
-
     }
 }

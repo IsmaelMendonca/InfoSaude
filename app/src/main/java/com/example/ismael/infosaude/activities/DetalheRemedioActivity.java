@@ -10,6 +10,7 @@ import com.example.ismael.infosaude.R2;
 import com.example.ismael.infosaude.domain.RemedioDomain;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 
 public class DetalheRemedioActivity extends BaseActivity {
 
@@ -47,6 +48,8 @@ public class DetalheRemedioActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detalhe_remedio);
+
+        ButterKnife.bind(this);
 
         final Bundle extras = getIntent().getExtras();
         RemedioDomain data = (RemedioDomain) extras.get("data");

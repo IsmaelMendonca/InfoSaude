@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Detalhamento Estabelecimento"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/corTemaAplicativo"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Código CNES:"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/detalhe_est_codigo_cnes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CODIGO CNES"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Código Unidade:"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/detalhe_est_codigo_unidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CODIGO UNIDADE"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Código IBGE:"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/detalhe_est_codigo_ibge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CODIGO IBGE"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CNPJ:"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/detalhe_est_cnpj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CNPJ"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome Fantasia:"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/detalhe_est_nome_fantasia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NOME FANTASIA"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Natureza:"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/detalhe_est_natureza"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NATUREZA"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tipo Unidade:"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/detalhe_est_tipo_unidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TIPO UNIDADE"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Esfera Administrativa:"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/detalhe_est_esfera_administrativa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ESFERA ADMINISTRATIVA"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Possui Vínculo com o SUS?"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/detalhe_est_vinculo_sus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="POSSUI VINCULO SUS"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Retenção: "
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/detalhe_est_retencao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RETENCAO"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fluxo Clientela: "
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/detalhe_est_fluxo_clientela"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FLUXO CLIENTELA"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Origem Geográfica: "
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/detalhe_est_origem_geografica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ORIGEM GEOGRAFICA"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tem Atendimento de Emergência?"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/detalhe_est_atendimento_emergencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ATENDIMENTO EMERGENCIA"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tem Atendimento Ambulatorial?"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/detalhe_est_atendimento_ambulatorial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ATENDIMENTO AMBULATORIAL"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tem Centro Cirúrgico?"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/detalhe_est_centro_cirurgico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CENTRO CIRURGICO"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tem Obstreta?"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/detalhe_est_obstreta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TEM OBSTRETA"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tem Neo Natal?"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/detalhe_est_neo_natal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TEM NEO NATAL"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tem Diálise?"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/detalhe_est_dialise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TEM DIALISE"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descrição Completa: "
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/detalhe_est_descricao_completa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DESCRICAO COMPLETA"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tipo da Unidade CNES: "
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/detalhe_est_tipo_unidade_cnes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TIPO UNIDADE CNES"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Categoria da Unidade: "
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/detalhe_est_categoria_unidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CATEGORIA DA UNIDADE"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logradouro: "
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/detalhe_est_logradouro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOGRADOURO"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Número: "
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/detalhe_est_numero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NUMERO"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bairro: "
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/detalhe_est_bairro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BAIRRO"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cidade: "
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/detalhe_est_cidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CIDADE"
+            android:layout_marginTop="5dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UF: "
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/detalhe_est_uf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UF"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CEP: "
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/detalhe_est_cep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CEP"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Turno de Atendimento: "
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/detalhe_est_turno_atendimento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TURNO ATENDIMENTO"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Latitude: "
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/detalhe_est_latitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LATITUDE"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Longitude: "
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/detalhe_est_longitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LONGITUDE"
+            android:layout_marginTop="5dp"/>
+
+        <LinearLayout
+            android:id="@+id/detalhe_est_localizacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:background="@color/corContainerBusca">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_add_location_black_24dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LOCALIZAR ESTABELECIMENTO"
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/corTemaAplicativo"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
