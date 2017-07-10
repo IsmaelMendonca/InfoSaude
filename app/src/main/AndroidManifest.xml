@@ -28,7 +28,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".activities.BuscaEstabelecimentoActivity" />
-        <activity android:name=".activities.BuscaServicoActivity" />
         <activity android:name=".activities.DetalheRemedioActivity" />
         <activity android:name=".activities.DetalheEstabelecimentoActivity"></activity>
     </application>

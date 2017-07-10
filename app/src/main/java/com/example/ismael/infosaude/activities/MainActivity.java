@@ -34,10 +34,4 @@ public class MainActivity extends BaseActivity {
         Intent beIntent = new Intent(this, BuscaEstabelecimentoActivity.class);
         startActivity(beIntent);
     }
-
-    @OnClick(R2.id.btn_buscar_servico)
-    public void irBuscarServico() {
-        Intent bsIntent = new Intent(this, BuscaServicoActivity.class);
-        startActivity(bsIntent);
-    }
 }
